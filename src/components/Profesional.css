@@ -1,0 +1,64 @@
+/* Benefits Section Styles */
+.profesional-section {
+  background-color: #fff;
+  padding-top: 2rem;
+}
+
+.icon-heart {
+  color: #1a1a1a;
+}
+
+.profesional-card {
+  text-align: center;
+  max-width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profesional-card .txt {
+  width: 500px;
+}
+
+.profesional-card h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+.profesional-card p {
+  margin-top: 0.5rem;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+.profesional-card h5 {
+  color: #4777F0;
+  font-size: 2rem;
+  font-family: "Great Vibes", cursive;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.profesional-section img {
+  width: 15rem;
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .profesional-card {
+    flex-direction: column;
+    margin: auto;
+  }
+  .profesional-card .txt {
+    width: 350px;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+  .profesional-card h2 {
+    margin-top: 0.1rem;
+  }
+}

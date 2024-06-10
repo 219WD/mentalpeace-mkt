@@ -1,0 +1,48 @@
+/* AgendaMedica.css */
+.agenda-medica {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 40%;
+    height: fit-content;
+  }
+  
+  .agenda-medica h2 {
+    color: #007bff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .agenda-medica p {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .agenda-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .agenda-form label {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .agenda-form input {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .agenda-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

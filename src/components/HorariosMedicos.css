@@ -1,0 +1,70 @@
+/* HorariosMedicos.css */
+.horarios-medicos {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.partedelfondo {
+    right: -9rem;
+    font-size: 20rem;
+    color: #ebebeb;
+    position: absolute;
+    z-index: -1;
+}
+.partedelfondo2 {
+    left: -11rem;
+    font-size: 20rem;
+    color: #ebebeb;
+    position: absolute;
+    z-index: -1;
+}
+
+.horarios-medicos h2 {
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.icon-title-horarios {
+    color: #007bff;
+}
+
+.horarios-medicos p {
+    color: #333;
+    margin: 10px 0;
+}
+
+.horarios-medicos table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.horarios-medicos th,
+.horarios-medicos td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-align: left;
+}
+
+.horarios-medicos th {
+    background-color: #4777f0cc;
+    color: white;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .partedelfondo,
+    .partedelfondo2 {
+        display: none;
+    }
+}

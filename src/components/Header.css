@@ -1,0 +1,63 @@
+/* Header Styles */
+.header {
+  background-color: #f4f4f4;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f4f4f4;
+      padding: 1rem 2rem;
+      z-index: 10;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+}
