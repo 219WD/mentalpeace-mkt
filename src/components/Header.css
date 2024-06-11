@@ -60,4 +60,9 @@
   .nav-links.active {
       display: flex;
   }
+
+  
+.btn-whatsapp {
+  white-space: nowrap;
+}
 }

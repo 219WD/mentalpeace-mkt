@@ -64,4 +64,8 @@
   .doctors-container {
     flex-direction: column;
   }
+  
+.doctor-card {
+  width: 300px;
+}
 }

@@ -104,7 +104,7 @@
   .services-card {
     width: 80%;
     flex-direction: column;
-    max-height: 80vh; /* Ajustar para pantallas medianas */
+    max-height: 100vh; /* Ajustar para pantallas medianas */
     padding: 10px; /* Agregar padding en pantallas medianas */
   }
 
@@ -121,7 +121,7 @@
 @media (max-width: 480px) {
   .services-card {
     width: 90%;
-    max-height: 90vh; /* Ajustar para pantallas pequeñas */
+    max-height: 100%; /* Ajustar para pantallas pequeñas */
   }
 
   .services-card-content h1 {

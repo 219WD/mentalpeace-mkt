@@ -1,0 +1,90 @@
+/* About Us Section Styles */
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+  max-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  padding: 2rem 2rem;
+  background: #EBEBEB;
+  margin: auto;
+}
+
+.large-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.large-card {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  /* Reduce font size */
+}
+
+.large-card h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  /* Reduce font size */
+}
+
+.large-card p {
+  color: #1a1a1a;
+}
+
+.small-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 1rem;
+}
+
+.small-card {
+  background: #f4f4f4;
+  padding: 0.5rem;
+  /* Reduce padding */
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  /* Reduce font size */
+  flex: 1;
+}
+
+.small-card h3 {
+  margin-top: 0.5rem;
+  color: #1a1a1a;
+  font-size: 1rem;
+  /* Reduce font size */
+}
+
+.small-card p {
+  margin-top: 0.5rem;
+  color: #1a1a1a;
+}
+
+.small-card img {
+  width: 2.5rem;
+  /* Reduce image size */
+  height: 2.5rem;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .about-us-section {
+    margin: auto;
+    max-height: 100%;
+  }
+
+  .small-cards {
+    flex-direction: column;
+  }
+
+  .small-card {
+    margin-bottom: 1rem;
+  }
+}
