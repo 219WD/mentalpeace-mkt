@@ -1,6 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import './Testimonials.css';
 
 const Testimonials = () => {
@@ -41,8 +44,11 @@ const Testimonials = () => {
   return (
     <div className="testimonials-section" id="testimonios" >
       <Swiper
+        modules={[Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
         breakpoints={{
           768: {
             slidesPerView: 2,
