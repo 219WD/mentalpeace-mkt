@@ -7,13 +7,12 @@ import 'swiper/css/autoplay';
 import './Testimonials.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import Foto1 from '../assets/soledad.jpg'
 
 const Testimonials = () => {
 
   const testimonials = [
     {
-      img: "https://i.imgur.com/71lmljQ.png",
+      img: "https://i.imgur.com/nL9kGQF.png",
       text: "Medicina Estética - Pasó de 1800 a 7.000 dólares x mes.",
       name: "Dra. Soledad",
       link: "https://www.youtube.com/watch?v=U2CNcxsbifg"
@@ -23,6 +22,12 @@ const Testimonials = () => {
       text: "Medicina Estética - pasó de 3000 a 17.000 dólares x mes.",
       name: "Dra. Mayra",
       link: "https://www.youtube.com/watch?v=rsu69ihHjFc"
+    },
+    {
+      img: "https://i.imgur.com/71lmljQ.png",
+      text: "Medicina Estética - Recomiendo altamente sus servicios, son de gran valor para cualquier clínica.",
+      name: "Dra. Noelia",
+      link: "https://www.youtube.com/watch?v=U2CNcxsbifg"
     },
     {
       img: "https://cdn.pixabay.com/photo/2016/11/29/05/11/adult-1867471_1280.jpg",
@@ -39,16 +44,12 @@ const Testimonials = () => {
       img: "https://images.pexels.com/photos/5215017/pexels-photo-5215017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       text: "Ahora podemos enfocarnos en lo que realmente importa: nuestros pacientes.",
       name: "Dra. Maria L."
-    },
-    {
-      img: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      text: "Recomiendo altamente sus servicios, son de gran valor para cualquier clínica.",
-      name: "Dr. Pedro S."
     }
   ];
 
   return (
     <div className="testimonials-section" id="testimonios" >
+      <h2>Testimonios</h2>
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={30}

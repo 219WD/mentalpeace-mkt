@@ -2,14 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faCalendar, faUserDoctor, faBlog } from '@fortawesome/free-solid-svg-icons';
 import './Services.css';
-import img1 from '../assets/banner-1-600x502.jpg'
 
 const Services = () => {
   return (
     <section id="servicios" className="services-section">
       <div className="services-card">
         <div className="services-card-image">
-          <img src={img1} alt="Descripción de la imagen" />
+          <img src="https://i.imgur.com/anJrFeM.png" alt="Descripción de la imagen" />
         </div>
         <div className="services-card-content">
           <h1>Creamos una página web para médicos</h1>

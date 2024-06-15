@@ -1,8 +1,10 @@
 import React from 'react';
+import './VideoComponent.css'
 
 const VideoComponent = () => {
   return (
     <iframe
+      className='video'
       width="400"
       height="200"
       src="https://www.youtube.com/embed/9VndxgFGy9E?autoplay=1"

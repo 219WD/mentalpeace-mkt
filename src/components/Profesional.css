@@ -53,10 +53,11 @@
   .profesional-card {
     flex-direction: column-reverse;
     margin: auto;
+    width: 100%;
   }
   .profesional-card .txt {
     width: 350px;
-    padding-bottom: 2rem;
+    padding: 1rem;
     justify-content: center;
   }
   .profesional-card h2 {

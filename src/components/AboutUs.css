@@ -76,8 +76,9 @@
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   .about-us-section {
-    margin: auto;
+    margin: 0;
     max-height: 100%;
+    max-width: 100vw;
   }
 
   .small-cards {
