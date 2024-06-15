@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import DoctorSection from './components/DoctorSection';
 import HorariosMedicos from './components/HorariosMedicos';
 import AboutUs from './components/AboutUs';
+import ServiciosOfrecidos from './components/ServiciosOfrecidos'
 
 function HomeScreen() {
   return (
@@ -17,11 +18,12 @@ function HomeScreen() {
       <Header />
       <HeroSection />
       <Profesional />
+      <Services />
       <AboutUs />
       <Benefits />
-      <Services />
-      <DoctorSection />
+      <ServiciosOfrecidos />
       <HorariosMedicos />
+      <DoctorSection />
       <Testimonials />
       <Footer />
     </div>

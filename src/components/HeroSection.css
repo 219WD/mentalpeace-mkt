@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero-section {
-  background: url('../assets/slider_2.jpg') no-repeat center center/cover;
+  background: url('../assets/woman-beauty-salon-face-treatment.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   display: flex;
@@ -86,8 +86,8 @@
 
 @media only screen and (max-width: 768px) {
   .hero-section {
-    background: url('../assets/slider_2.jpg') no-repeat center right/cover;
-    background-position-x: -1000px;
+    background: url('../assets/woman-beauty-salon-face-treatment.jpg') no-repeat center right/cover;
+    background-position-x: -550px;
   }
 
   .hero-content {
@@ -97,7 +97,7 @@
     padding: 1rem;
     position: absolute;
     top: 6rem;
-    left: 0.8rem;
+    left: 2rem;
     border-radius: 2px;
     z-index: 1;
   }

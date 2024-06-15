@@ -1,0 +1,56 @@
+/* Custom Servicios Ofrecidos Styles */
+.custom-services-section {
+  width: 100vw;
+  background-color: #E5E8EA;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.custom-services-section h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.custom-services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.custom-service-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.custom-service-icon {
+  font-size: 3rem;
+  color: #4777F0;
+  margin-bottom: 1rem;
+}
+
+.custom-service-card h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.custom-service-card p {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .custom-services-section {
+    background-color: #E5E8EA;
+  }
+  .custom-service-card {
+    max-width: 90%;
+  }
+}

@@ -5,7 +5,7 @@
 }
 
 .benefits-section {
-  background-color: #F5F8FA;
+  background-color: #ffffff;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -85,7 +85,7 @@
 
 @media only screen and (max-width: 768px) {
   .benefits-section {
-    background-color: #e5e8ea;
+    background-color: #ffffff;
   }
 
   .benefit-cards {

@@ -1,7 +1,8 @@
 /* Benefits Section Styles */
 .profesional-section {
   background-color: #fff;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  margin: auto;
 }
 
 .icon-heart {

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Profesional.css';
 import PngDra from '../assets/about.png'
+import VideoComponent from './VideoComponent '
 
 const Profesional = () => {
   return (
@@ -9,9 +10,10 @@ const Profesional = () => {
         <img src={PngDra} alt="Doctora" />
         <div className="txt">
           <h2>Bienvenido profesional de la medicina.</h2>
-          <p>Tenemos muchos servicios web y de marketing para ofrecerle y explotar su maximo potencial. Le aseguramos una increible mejora en la gestion de turnos para su consultorio, y campañas publicitarias para promocionar servicios o productos.</p>
+          <p>Ayudamos a centros de medicina estética a convertir más prospectos en clientes leales mediante un sistema automatizado de atención y marketing.</p>
           <h5>Mental Peace Agency</h5>
         </div>
+        <div className="video"><VideoComponent /></div>
       </div>
     </section>
   );

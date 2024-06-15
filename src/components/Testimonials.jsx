@@ -5,37 +5,43 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import './Testimonials.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Foto1 from '../assets/soledad.jpg'
 
 const Testimonials = () => {
 
   const testimonials = [
     {
-      img: "https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg",
-      text: "Desde que contraté el servicio de turnos online, no reniego más. ¡Mis pacientes están felices!",
-      name: "Dr. Juan P."
+      img: "https://i.imgur.com/71lmljQ.png",
+      text: "Medicina Estética - Pasó de 1800 a 7.000 dólares x mes.",
+      name: "Dra. Soledad",
+      link: "https://www.youtube.com/watch?v=U2CNcxsbifg"
     },
     {
-      img: "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg",
-      text: "Desde que hice mi página web, triplicamos nuestras consultas.",
-      name: "Dra. Laura M."
+      img: "https://i.imgur.com/0mj8Udq.jpg",
+      text: "Medicina Estética - pasó de 3000 a 17.000 dólares x mes.",
+      name: "Dra. Mayra",
+      link: "https://www.youtube.com/watch?v=rsu69ihHjFc"
     },
     {
       img: "https://cdn.pixabay.com/photo/2016/11/29/05/11/adult-1867471_1280.jpg",
-      text: "El manejo de citas online ha sido increíblemente eficiente. ¡Muy recomendado!",
-      name: "Dr. Carlos R."
+      text: "Ecografías - pasó de 800 a 5.000 dólares x mes",
+      name: "Dr. Robert",
+      link: "https://www.youtube.com/watch?v=oAWeF4AH0W0"
     },
     {
-      img: "https://cdn.pixabay.com/photo/2016/11/29/06/09/woman-1867720_1280.jpg",
+      img: "https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       text: "El diseño de la página web nos ha permitido conectar mejor con nuestros pacientes.",
       name: "Dra. Ana G."
     },
     {
-      img: "https://cdn.pixabay.com/photo/2015/10/16/05/55/girl-990585_1280.jpg",
+      img: "https://images.pexels.com/photos/5215017/pexels-photo-5215017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       text: "Ahora podemos enfocarnos en lo que realmente importa: nuestros pacientes.",
       name: "Dra. Maria L."
     },
     {
-      img: "https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg",
+      img: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       text: "Recomiendo altamente sus servicios, son de gran valor para cualquier clínica.",
       name: "Dr. Pedro S."
     }
@@ -64,6 +70,7 @@ const Testimonials = () => {
               <div className="testimonial-text">
                 <h2>{testimonial.name}</h2>
                 <p>- {testimonial.text}</p>
+                <a className='btn-youtube' href={testimonial.link} target="_blank"><FontAwesomeIcon icon={faYoutube} className='icon-yt'/> Ver video</a>
               </div>
             </div>
           </SwiperSlide>
