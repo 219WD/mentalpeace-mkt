@@ -5,7 +5,7 @@ const VideoComponent = () => {
     <iframe
       width="400"
       height="200"
-      // src="https://www.youtube.com/embed/9VndxgFGy9E?autoplay=1"
+      src="https://www.youtube.com/embed/9VndxgFGy9E?autoplay=1"
       title="4 Pilares para incrementar las Ventas en tu Centro de Estética."
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
