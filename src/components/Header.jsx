@@ -15,7 +15,7 @@ const Header = () => {
           <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="https://wa.me/tu_numero" className="btn-whatsapp">
+        <a href="https://wa.me/3816380954" className="btn-whatsapp">
           <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
         </a>
       </nav>

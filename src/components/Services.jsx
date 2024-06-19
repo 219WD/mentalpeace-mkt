@@ -26,7 +26,7 @@ const Services = () => {
               <FontAwesomeIcon icon={faBlog} className="benefit-icon" /> Blog para médicos: Comparte tu contenido científico, consejos, novedades, tratamientos o eventos de salud
             </li>
           </ul>
-          <button className="cta-button">Quiero un sitio web</button>
+          <a href='https://wa.me/3816380954' className="cta-button">Quiero un sitio web</a>
         </div>
       </div>
     </section>
