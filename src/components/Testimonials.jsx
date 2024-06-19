@@ -27,7 +27,7 @@ const Testimonials = () => {
       img: "https://i.imgur.com/71lmljQ.png",
       text: "Medicina Estética - Recomiendo altamente sus servicios, son de gran valor para cualquier clínica.",
       name: "Dra. Noelia",
-      link: "https://www.youtube.com/watch?v=U2CNcxsbifg"
+      link: "https://youtu.be/rBD8eW2rvMc"
     },
     {
       img: "https://cdn.pixabay.com/photo/2016/11/29/05/11/adult-1867471_1280.jpg",
