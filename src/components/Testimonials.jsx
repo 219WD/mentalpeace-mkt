@@ -47,24 +47,24 @@ const Testimonials = () => {
     },
     {
       img: "https://i.imgur.com/71lmljQ.png",
-      text: "Medicina Estética - Recomiendo altamente sus servicios, son de gran valor para cualquier clínica.",
+      text: "Medicina Estética - pasó de 4000 a 21.000 dólares x mes.",
       name: "Dra. Noelia",
       link: "https://youtu.be/rBD8eW2rvMc"
     },
     {
       img: "https://cdn.pixabay.com/photo/2016/11/29/05/11/adult-1867471_1280.jpg",
-      text: "Ecografías - pasó de 800 a 5.000 dólares x mes",
+      text: "Ecografías - pasó de 800 a 5.000 dólares x mes.",
       name: "Dr. Robert",
       link: "https://www.youtube.com/watch?v=oAWeF4AH0W0"
     },
     {
       img: "https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      text: "El diseño de la página web nos ha permitido conectar mejor con nuestros pacientes.",
+      text: "Medicina Estética - pasó de 1200 a 13.000 dólares x mes.",
       name: "Dra. Ana G."
     },
     {
       img: "https://images.pexels.com/photos/5215017/pexels-photo-5215017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      text: "Ahora podemos enfocarnos en lo que realmente importa: nuestros pacientes.",
+      text: "Medicina Estética - pasó de 900 a 5.000 dólares x mes.",
       name: "Dra. Maria L."
     }
   ];
