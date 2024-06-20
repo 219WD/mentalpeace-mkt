@@ -96,7 +96,8 @@
 
   .benefit-cards {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px; 
+    justify-items: center; 
   }
 
   .benefits-section::before {
@@ -105,7 +106,7 @@
   }
 
   .benefit-card {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     height: auto;
     padding: 2rem;
