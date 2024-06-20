@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faCalendar, faUserDoctor, faBlog } from '@fortawesome/free-solid-svg-icons';
 import './Services.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Services = () => {
+  const cardRef = useRef(null);
+  useEffect(() => {
+    const elements = [
+      cardRef.current,
+    ];
+
+    elements.forEach((el, index) => {
+      gsap.fromTo(el,
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          delay: index * 0.2, 
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%", 
+            end: "bottom 20%", 
+            scrub: 1,
+          },
+        }
+      );
+    });
+  }, []);
   return (
     <section id="servicios" className="services-section">
-      <div className="services-card">
+      <div className="services-card" ref={cardRef}>
         <div className="services-card-image">
           <img src="https://i.imgur.com/anJrFeM.png" alt="Descripción de la imagen" />
         </div>

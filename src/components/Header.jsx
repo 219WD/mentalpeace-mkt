@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { gsap } from "gsap";
 
 const Header = () => {
+  useEffect(() => {
+    // Animación para el fondo del menú
+    gsap.fromTo(".header", 
+      { y: -100, opacity: 0 }, 
+      { y: 0, opacity: 1, duration: 1, ease: "power4.out" }
+    );
+    
+    // Animación para el logo, lista y botón con delay
+    gsap.fromTo(".logo, .nav-links li, .btn-whatsapp", 
+      { y: -30, opacity: 0 }, 
+      { y: 0, opacity: 1, duration: 0.8, delay: 1, stagger: 0.2, ease: "power4.out" }
+    );
+  }, []);
+
   return (
     <header className="header">
       <nav className="navbar">

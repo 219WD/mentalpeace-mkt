@@ -1,7 +1,35 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './HeroSection.css';
+import { gsap } from "gsap";
+
 
 const HeroSection = () => {
+  const tl = useRef(null);
+
+  useEffect(() => {
+    gsap.set(".hero-content, .hero-buttons", { y: -75, opacity: 0 });
+    gsap.set("h1, p", { y: -30, opacity: 0 });
+
+    tl.current = gsap.timeline({ paused: true })
+      .to(".hero-content, .hero-buttons", {
+        opacity: 1,
+        y: 0,
+        delay: 0.5,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: "power4.inOut",
+      })
+      .to("h1, p", {
+        opacity: 1,
+        y: 0,
+        delay: 0,
+        duration: 0.5,
+        stagger: 0.2,
+        ease: "power4.inOut",
+      })
+      
+    tl.current.play();
+  }, []);
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">

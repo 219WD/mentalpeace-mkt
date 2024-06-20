@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './DoctorSection.css';
-import img1 from '../assets/dr1.jpg'
-import img2 from '../assets/dr2.webp'
-import img3 from '../assets/dr3.webp'
+import img1 from '../assets/dr1.jpg';
+import img2 from '../assets/dr2.webp';
+import img3 from '../assets/dr3.webp';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const doctors = [
   {
@@ -37,9 +41,29 @@ const doctors = [
 ];
 
 const DoctorSection = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(containerRef.current,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: 1,
+        }
+      }
+    );
+  }, []);
+
   return (
     <section className="doctor-section">
-      <div className="container">
+      <div className="container" ref={containerRef}>
         <h2>Presenta a tu personal</h2>
         <div className="doctors-container">
           {doctors.map((doctor, index) => (

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faCalendarAlt, faBullhorn, faEnvelope, faBlog, faUsers, faPalette } from '@fortawesome/free-solid-svg-icons';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './ServiciosOfrecidos.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const servicios = [
   {
@@ -42,12 +46,34 @@ const servicios = [
 ];
 
 const ServiciosOfrecidos = () => {
+  const serviciosRef = useRef([]);
+
+  useEffect(() => {
+    serviciosRef.current.forEach((el, index) => {
+      gsap.fromTo(el,
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: 1,
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <section className="custom-services-section">
       <h2>Servicios Ofrecidos</h2>
       <div className="custom-services-container">
         {servicios.map((servicio, index) => (
-          <div className="custom-service-card" key={index}>
+          <div className="custom-service-card" key={index} ref={el => serviciosRef.current[index] = el}>
             <FontAwesomeIcon icon={servicio.icon} className="custom-service-icon" />
             <h3>{servicio.title}</h3>
             <p>{servicio.description}</p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
@@ -7,8 +7,30 @@ import 'swiper/css/autoplay';
 import './Testimonials.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Testimonials = () => {
+
+  const testimonialsRef = useRef(null);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: testimonialsRef.current,
+        start: "top 80%", // Comienza la animación cuando el 80% del contenedor es visible
+        end: "bottom 20%", // Termina la animación cuando el 20% del contenedor es visible
+        scrub: 1, // Configuración para hacer que la animación sea más suave mientras se hace scroll
+      }
+    });
+
+    tl.fromTo(testimonialsRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power4.out" }
+    );
+
+  }, []);
 
   const testimonials = [
     {
@@ -50,7 +72,7 @@ const Testimonials = () => {
   return (
     <div className="testimonials-section" id="testimonios" >
       <h2>Testimonios</h2>
-      <Swiper
+      <Swiper ref={testimonialsRef}
         modules={[Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
