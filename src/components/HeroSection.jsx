@@ -37,7 +37,7 @@ const HeroSection = () => {
         <p>Transformamos tu negocio en estética y belleza generando crecimiento económico con marketing de Resultados. Enfócate en lo que amas embellecer a tus clientes.</p>
         <div className="hero-buttons">
           <a href="#contacto" className="btn-primary">Contratar Servicio</a>
-          <a href="https://wa.me/3816380954" className="btn-secondary">Contacto por WhatsApp</a>
+          <a href="https://wa.me/3816380954" className="btn-secondary">Chatea con nosotros</a>
         </div>
       </div>
     </section>
