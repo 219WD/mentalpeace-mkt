@@ -14,16 +14,16 @@ const HeroSection = () => {
       .to(".hero-content, .hero-buttons", {
         opacity: 1,
         y: 0,
-        delay: 0.5,
-        duration: 0.7,
-        stagger: 0.1,
+        delay: 1,
+        duration: 1.5,
+        stagger: 0.2,
         ease: "power4.inOut",
       })
       .to("h1, p", {
         opacity: 1,
         y: 0,
         delay: 0,
-        duration: 0.5,
+        duration: 0.7,
         stagger: 0.2,
         ease: "power4.inOut",
       })
